@@ -47,6 +47,43 @@ Governance = Oversight & Compliance Enforcement
 
 ---
 
+## 🏗 Logical Architecture Diagram
+
+Identity Layer
+--------------
+User
+  ↓
+Microsoft Entra ID
+  ↓
+Security Group Membership
+
+Authorization Layer
+-------------------
+Security Group
+  ↓
+SharePoint Role Mapping (Owner / Member / Visitor)
+  ↓
+SharePoint Online Site / Document Library
+
+Governance Layer
+----------------
+• Access Reviews (Scheduled Certification)
+• Guest Expiration Policies
+• Sensitivity Labels
+• DLP Enforcement
+• Site Expiration Policy
+
+Compliance / Audit Layer
+------------------------
+• Audit Logs
+• Access Review Evidence
+• Policy Documentation
+• Control Mapping (SOX / HIPAA / NIST / ISO)
+
+Flow Summary:
+User → Identity → Group → Role → Resource → Governance Controls → Audit Evidence → Compliance Alignment
+
+
 ## 📊 Core Components
 
 ### 1️⃣ Collaboration Governance Matrix (CSV)
