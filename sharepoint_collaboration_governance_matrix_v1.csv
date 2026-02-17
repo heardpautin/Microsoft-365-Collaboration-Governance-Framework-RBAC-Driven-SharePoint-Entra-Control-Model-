@@ -1,0 +1,10 @@
+Business Unit,Job Role,Entra Security Group,SharePoint Site,SharePoint Role,Data Sensitivity,External Sharing Policy,Access Review Frequency,Business Owner,Compliance Mapping,Risk Score Placeholder,Notes
+Finance,Finance Analyst,FIN-ANL-GRP,FIN-Reporting,Member,Confidential,Disabled,Quarterly,Finance Director,SOX 404,,Group-based access only
+Finance,Finance Manager,FIN-MGR-GRP,FIN-Reporting,Owner,Confidential,Disabled,Quarterly,CFO,SOX 404,,Owner certifies quarterly
+HR,HR Specialist,HR-SPEC-GRP,HR-Personnel,Member,Restricted,Disabled,Quarterly,HR Director,HIPAA,,Contains sensitive PII
+HR,HR Director,HR-DIR-GRP,HR-Personnel,Owner,Restricted,Disabled,Quarterly,HR Director,HIPAA,,Restricted access
+IT,Systems Engineer,IT-ENG-GRP,IT-Projects,Member,Internal,Internal Only,Semi-Annual,IT Manager,NIST AC-2,,No direct assignments
+IT,IT Manager,IT-MGR-GRP,IT-Projects,Owner,Internal,Internal Only,Semi-Annual,IT Director,NIST AC-2,,Standard governance
+Vendor,External Auditor,VEND-AUD-GUEST,FIN-Audit,Visitor,Confidential,30-Day Expiry,Monthly,Audit Manager,FFIEC,,Guest auto-expire
+Legal,Legal Counsel,LEGAL-CNSL-GRP,Legal-Contracts,Owner,Restricted,Disabled,Quarterly,General Counsel,SOX 302,,High-risk documents
+Operations,Operations Lead,OPS-LEAD-GRP,OPS-Planning,Member,Internal,Internal Only,Semi-Annual,Operations Director,ISO 27001,,Standard collaboration
