@@ -4,6 +4,17 @@ Focus Area: IAM + GRC + Cloud Collaboration Governance
 
 ---
 
+## Executive Summary
+
+This project models a structured Microsoft 365 collaboration governance framework designed to control entitlement lifecycle, reduce data exposure risk, and align cloud collaboration environments with regulatory and security best practices.
+
+Rather than focusing on platform administration, this framework emphasizes identity-driven access control, group-based authorization, risk-based review prioritization, and structured site provisioning controls from inception.
+
+The objective is to demonstrate how IAM, GRC, and cloud security disciplines converge within collaboration platforms such as SharePoint Online when governance maturity is treated as a measurable control system rather than an ad-hoc configuration exercise.
+
+This repository serves both as a governance blueprint and as a structured training model for applying architectural thinking to Microsoft 365 environments.
+
+
 ## 🔎 Project Overview
 
 This project demonstrates how traditional RBAC (Role-Based Access Control) models can be extended into Microsoft 365 collaboration platforms, specifically:
@@ -257,7 +268,32 @@ Total score determines governance priority:
 | 10–14 | High | Immediate owner review |
 | 15+ | Critical | Governance escalation required |
 
+
 ---
+
+### 📌 Sample Risk Calculation
+
+Example: FIN-Audit Collaboration Site
+
+Risk Evaluation:
+
+• Data Sensitivity: Confidential (+3)  
+• External Sharing Enabled (30-Day Expiry): Yes (+4)  
+• Guest Users Present: Yes (+3)  
+• Large Membership (>50): No (+0)  
+• Access Review Frequency: Monthly (+0)  
+• Business Owner Assigned: Yes (+0)  
+• Direct User Permissions: No (+0)  
+
+Total Risk Score: 10  
+
+Risk Tier: High  
+
+Governance Action: Immediate owner review and validation of external sharing scope.
+
+---
+
+This example demonstrates how measurable indicators translate into actionable governance prioritization rather than uniform review treatment.
 
 ### 🎯 Governance Application
 
