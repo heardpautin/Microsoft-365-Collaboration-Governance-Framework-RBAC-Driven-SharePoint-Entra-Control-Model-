@@ -205,7 +205,7 @@ Controls are aligned to commonly recognized regulatory and security frameworks i
 - NIST AC-2
 - ISO 27001
 
-This demonstrates how collaboration platforms can transition from unmanaged data repositories to structured, auditable environments.
+This demonstrates how collaboration platforms can transition from unmanaged data repositories into structured, auditable control environments.
 
 ---
 
@@ -218,6 +218,70 @@ This demonstrates how collaboration platforms can transition from unmanaged data
 | Level 3 | Structured matrix, lifecycle automation, compliance mapping, standardized roles |
 
 This project models a Level 3 governance design.
+
+---
+
+## 📊 Risk Exposure Scoring Model
+
+To move beyond static governance design, this framework includes a structured Risk Exposure Scoring Model to quantify collaboration risk within SharePoint environments.
+
+The objective is to prioritize oversight and remediation based on measurable exposure indicators rather than treating all sites equally.
+
+---
+
+### 🔢 Risk Scoring Factors
+
+Each collaboration site is evaluated using weighted control factors:
+
+| Risk Factor | Condition | Score |
+|-------------|-----------|-------|
+| Data Sensitivity | Restricted | +5 |
+| Data Sensitivity | Confidential | +3 |
+| External Sharing Enabled | Yes | +4 |
+| Guest Users Present | Yes | +3 |
+| Large Membership | >50 Members | +2 |
+| No Access Review in 6 Months | Yes | +3 |
+| No Business Owner Assigned | Yes | +5 |
+| Direct User Permissions Detected | Yes | +4 |
+
+---
+
+### 🧮 Risk Tier Classification
+
+Total score determines governance priority:
+
+| Risk Score Range | Risk Tier | Governance Action |
+|------------------|----------|------------------|
+| 0–4 | Low | Standard review cycle |
+| 5–9 | Moderate | Increased monitoring |
+| 10–14 | High | Immediate owner review |
+| 15+ | Critical | Governance escalation required |
+
+---
+
+### 🎯 Governance Application
+
+Risk scoring enables:
+
+• Prioritized access reviews  
+• Targeted remediation of high-risk sites  
+• Focused external sharing oversight  
+• Escalation workflows for critical exposure  
+• Executive-level reporting of collaboration risk posture  
+
+---
+
+### 🏗 Architectural Insight
+
+Risk scoring transforms governance from reactive compliance into proactive risk management.
+
+Rather than asking:
+"Are we compliant?"
+
+The framework enables leadership to ask:
+"Where is our highest collaboration risk today?"
+
+This aligns IAM, GRC, and cloud security into a measurable risk-based control model.
 
 ---
 
