@@ -18,16 +18,18 @@ The framework mirrors a real-world enterprise RBAC matrix and applies it to Shar
 - Data sensitivity classification
 - Access review lifecycle
 - Compliance alignment
+- Structured site provisioning controls
 
 ---
 
 ## 🎯 Objective
 
-To design a structured Collaboration Governance Matrix that:
+To design a structured Collaboration Governance Framework that:
 
 - Eliminates direct user permissions
 - Enforces group-based access
 - Aligns review cadence with risk level
+- Controls site creation at inception
 - Maps collaboration controls to regulatory frameworks
 - Bridges IAM architecture with GRC oversight
 
@@ -83,12 +85,94 @@ Compliance / Audit Layer
 Flow Summary:
 User → Identity → Group → Role → Resource → Governance Controls → Audit Evidence → Compliance Alignment
 
+---
+
+## 🏗 Site Provisioning & Approval Workflow
+
+Effective collaboration governance begins at the point of site creation.  
+This framework enforces structured controls during provisioning to prevent unmanaged sprawl and entitlement risk.
+
+### 1️⃣ Site Request Initiation
+
+• Request submitted via standardized intake form (ServiceNow / M365 Request Form)  
+• Business justification required  
+• Data sensitivity classification selected (Public / Internal / Confidential / Restricted)  
+• Primary Business Owner identified  
+• Secondary Owner required for redundancy  
+
+---
+
+### 2️⃣ Governance Validation
+
+Before site creation:
+
+• Business Owner validated (must be non-IT data owner)  
+• Sensitivity classification reviewed  
+• External sharing requirements declared  
+• Compliance mapping identified (if applicable)  
+
+High-sensitivity sites require governance approval prior to creation.
+
+---
+
+### 3️⃣ Automated Provisioning Controls
+
+Upon approval:
+
+• Microsoft 365 Group automatically created  
+• Entra Security Group aligned to business role  
+• SharePoint site provisioned with standardized template  
+• Default permission roles applied (Owner / Member / Visitor)  
+• Sensitivity label automatically enforced  
+• External sharing policy configured based on classification  
+• Site expiration policy applied  
+
+No direct user permissions are permitted at creation.
+
+---
+
+### 4️⃣ Lifecycle Controls Applied
+
+Immediately after provisioning:
+
+• Access Review schedule assigned based on sensitivity level  
+• Guest access expiration policy enforced (if enabled)  
+• Audit logging enabled  
+• DLP policies inherited from classification tier  
+• Site ownership recorded for audit traceability  
+
+---
+
+### 5️⃣ Ongoing Governance Enforcement
+
+• Quarterly or semi-annual access certification (risk-based)  
+• Automatic notification of inactive sites  
+• Owner attestation required for renewal  
+• Automatic archival or deletion if lifecycle policy not satisfied  
+
+---
+
+### Governance Objective
+
+Provisioning is treated as a control event — not a convenience action.
+
+This structured provisioning model ensures:
+
+• Least privilege from inception  
+• Business accountability  
+• Elimination of unmanaged site creation  
+• Reduced data sprawl risk  
+• Alignment with Zero Trust principles  
+• Audit-ready evidence trail  
+
+---
 
 ## 📊 Core Components
 
 ### 1️⃣ Collaboration Governance Matrix (CSV)
 
 Defines structured mapping between:
+
 - Business Unit
 - Job Role
 - Entra Group
@@ -165,9 +249,9 @@ This framework demonstrates governance maturity aligned to both financial regula
 - Dynamic group logic (attribute-based access control)
 - Sensitivity label enforcement mapping
 - Data Loss Prevention (DLP) integration model
-- Automated provisioning workflow design
-- Audit evidence tracking model
-- Risk scoring column for entitlement exposure
+- Risk scoring model for entitlement exposure
+- Automated provisioning workflow integration example
+- Audit evidence tracking template
 - Zero Trust alignment documentation
 
 ---
@@ -180,5 +264,6 @@ This framework demonstrates the ability to:
 - Design structured entitlement lifecycle controls
 - Align technical authorization models with compliance requirements
 - Apply GRC discipline to cloud-based collaboration platforms
+- Architect lifecycle-based access control models in Microsoft 365 environments
 
 This project reflects practical enterprise governance thinking applicable to financial services, healthcare, and federal environments.
